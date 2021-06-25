@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/cce18f0ce0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="/styling/landing.css" rel="stylesheet" />
+    <!-- <link href="/styling/portfolio.css" rel="stylesheet" /> -->
+    <link href="/styling/contactform.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="/styling/services.css">
+    <!-- <link rel="stylesheet" href="/styling/testimonials.css"> -->
+    <link rel="stylesheet" href="/styling/navbar.css">
+    <!-- <link rel="stylesheet" href="/styling/aboutme.css"> --> 
+  </head>
+  <body>
+    <!---------------------Nav Bar----------------->
+    <nav class="navbar">
+      <ul class="navbar-links">
+        <li class="navbar-link"><a href="/html/index.html" class="navbar-anchor">HOME</a></li>
+        <li class="navbar-link">
+          <a href="/html/aboutme.html" class="navbar-anchor">ABOUT ME</a>
+        </li>
+        <li class="navbar-link"><a href="/html/portfolio.html" class="navbar-anchor">PORTFOLIO</a></li>
+        <li class="navbar-link"><a href="/html/services.html" class="navbar-anchor">SKILLS & EXPERIENCE</a></li>
+        <li class="navbar-link"><a href="/html/testimonials.html" class="navbar-anchor">TESTIMONIALS</a></li>
+        <li class="navbar-link"><a href="/html/contact.html" class="navbar-anchor">CONTACT ME</a></li>
+      </ul>
+      <button class="navbar-button" onclick="toggleNavbar()"><i class="fas fa-bars"></i></button>
+    </nav>
+    <!---------------------LANDING PAGE----------------->
+    <div class="main">
+      <div id="first" style="height: 0;">
+        <div id="side_bar">
+          <img src="/images/Khanya Gope.JPG" alt="My Profile Photo" />
+          <h1 id="side_heading">Khanya Gope</h1>
+          <h2 id="side_heading">front-end developer</h2>
+          <div class="links">
+            <a href="/html/index.html">Home</a>
+            <a href="/html/aboutme.html">About Me</a>
+            <a href="/html/portfolio.html">Portfolio</a>
+            <a href="/html/services.html">My Skills & Experiences</a>
+            <a href="/html/testimonials.html">Testimonials</a>
+            <a href="/html/contact.html">Contact Me</a>
+          </div>
+          <h4>Get in touch</h4> 
+          <div id="social-bar">
+            <a
+              href="https://www.linkedin.com/mwlite/in/khanya-gope-9255b2191"
+              title="LinkedIn:KhanyaGope"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/Khanya45" title="Github:Khanya45"
+              ><i class="fab fa-github-square"></i
+            ></a>
+            <a href="https://codepen.io/your-work" title="CodePen:KhanyaGope"
+              ><i class="fab fa-codepen"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      
+ 
+      <!---------------------CONTACT SECTION----------------->
+      <section id="contact_page">
+        <h1 id="cont_heading">Contact Me</h1>
+        
+        <div class="contact-container">
+          
+          <div class="contact_details">
+            <h1>Khanya Gope</h1>
+            <h2>back-end Developer</h2>
+            <!-------CONTACT DETAILS--------->
+            <p>
+              Fill out this form and I will contact you within 2 business days.
+              Otherwise you can reach out to me via my personal cell and or
+              email. Thanks for viewing!
+            </p>
+            <div class="test">
+              <i class="fas fa-map-marker-alt">
+              </i>
+              <p>Khayelitsha, Cape Town, South Africa</p>
+            </div>
+            <div class="test">
+              <i class="fas fa-phone-square-alt"></i>
+              <p>+27 81 445 0796</p>
+            </div>
+            <div class="test">
+              <i class="fas fa-envelope-square"></i>
+              <p>khanyagope93@gmail.com</p>
+            </div>
+            
+            
+            
+            </div>
+        
+         <!--------------CONTACT FORM-------------->
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/xzbyzobo"
+            method="POST"
+          >
+            <div id="heading">
+              <label>Contact Me</label>
+            </div>
+            <div>
+              <label for="name" id="textbox">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                  placeholder="Enter your name"
+                  class="contact-info"
+                />
+             </label>
+            </div>
+            <div>
+              <label for="surname" id="textbox">
+                <input
+                  class="contact-info"
+                  type="surname"
+                  name="surname"
+                  id="surname"
+                  required
+                  placeholder="Enter your surname"
+                />
+             </label>
+            </div>
+            <div>
+              <label for="email" id="textbox">
+                <input
+                  class="contact-info"
+                  type="email"
+                  name="_replyto"
+                  id="email"
+                  required
+                  placeholder="Enter your email"
+                />
+             </label>
+            </div>
+            <div>
+              <label for="message" id="textbox">
+                <textarea
+                  name="message"
+                  id="text-box"
+                  placeholder="Please enter your message"
+                ></textarea>
+             </label>
+            </div>
+            <button type="submit" id="submit-btn">Send</button>
+            </div>  
+          </form>
+       </div> 
+      </section>
+      <!---------------------SKILLS SECTION----------------->
+
+      <!---------------------TESTIMONIAL SECTION----------------->
+    </div>
+
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+    crossorigin="anonymous"
+  ></script>
+  </script>
+  <script src="/navbar.js"></script>
+  </body>
+</html>

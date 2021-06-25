@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  box-sizing: border-box;
+  background-size: cover;
+  /* height: 100vh; */
+}
+
+#first {
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.navbar button {
+  background: rgba(206, 206, 206, 0.6);
+  border-radius: 0;
+}
+#bg-img img {
+  height: 30%;
+}
+
+#first {
+  background: url(https://miro.medium.com/max/10368/0*M1QgnmpXAherbcbF);
+  box-sizing: border-box;
+  background-size: cover;
+  flex-direction: column;
+  height: 100vh;
+  color: wheat;
+}
+#About_me {
+  padding: 10% 24%;
+  height: 100vh;
+  color: azure;
+}
+#About_me button {
+  /* border-radius: 20px; */
+  padding: 10px;
+  margin: 15px;
+  padding: 10px;
+  background: transparent;
+  color: rgb(228, 210, 210);
+  border: 1px solid rgb(1, 243, 110);
+  font-weight: 300;
+  font-size: 1em;
+}
+
+#About_me button:hover {
+  background: #3b6462;
+  transform: scale(0.9);
+}
+
+#About_me h1 {
+  font-size: 4em;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+#About_me h2 {
+  /* text-transform: uppercase; */
+  /* font-size: 2em;
+  font-weight: 500;*/
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  margin-bottom: 100px;
+  font-size: 3em;
+  font-weight: 300;
+  text-transform: none;
+}
+/* #About_me h3 {
+  text-transform: capitalize;
+  font-size: 2em;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  margin-bottom: 15px;
+} */
+footer {
+  color: rgba(0, 0, 0, 0.7);
+  text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+  /* margin-top: 10px; */
+  display: flex;
+  align-items: flex-end;
+}
+/* #About_me p {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  background: rgba(59, 48, 48, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 10px;
+} */
+.main {
+  /* background: #b08968; */
+  width: 100%;
+}
+#socials {
+  display: none;
+  font-size: 2rem;
+}
+
+#side_bar {
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  max-width: 20%;
+  width: 100%;
+  height: 100%;
+  align-content: space-around;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  position: fixed;
+}
+
+#side_bar {
+  background: rgba(160, 125, 111, 0.95);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #b9b9b9;
+  text-align: center;
+}
+
+#social-bar i {
+  color: #b9b9b9;
+}
+
+#socials i {
+  color: #b9b9b9;
+}
+#socials i:hover {
+  transform: scale(0.9);
+}
+
+#side_bar img {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#side_bar h1 {
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+#side_bar h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.links {
+  flex-direction: column;
+  text-transform: capitalize;
+  display: flex;
+  /* text-align: left; */
+}
+
+.links a {
+  margin-top: 10px;
+  text-decoration: none;
+  color: #14213d;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+h4 {
+  margin: 50px;
+  margin-bottom: 20px;
+}
+
+#social-bar {
+  display: block;
+}
+#social-bar i {
+  margin-left: 10px;
+  font-size: 2rem;
+}
+.links a:hover {
+  color: blanchedalmond;
+}
+
+#social-bar i:hover {
+  /* transition: 0.3s;
+  transform: scale(0.9); */
+  color: #14213d;
+  /* animation: icons 2s;
+  animation-delay: icons 2s; */
+}
+/* 
+@keyframes icons {
+  0% {
+    font-size: 2rem;
+  }
+
+  50% {
+    font-size: 1.5rem;
+  }
+  75% {
+    font-size: 1.8;
+  }
+  100% {
+    font-size: 2rem;
+  }
+} */
+
+@media screen and (max-width: 1000px) {
+  #side_bar {
+    display: none;
+  }
+  #side_social i {
+    margin-top: 50em;
+  }
+
+  h4 {
+    display: none;
+  }
+  .navbar {
+    display: block;
+  }
+
+  #About_me h1 {
+    font-size: 3em;
+  }
+
+  #About_me h2 {
+    font-size: 2em;
+  }
+
+  #About_me {
+    padding: 12% 10% 0% 5%;
+  }
+}
+
+@media screen and (max-width: 488) {
+  #About_me h2 {
+    font-size: 1.5 em;
+    font-weight: 400;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    margin-bottom: 50px;
+  }
+}

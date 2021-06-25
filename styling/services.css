@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #b08968;
+  /* height: 100vh; */
+}
+
+#skills {
+  background: #b08968;
+  padding: 1% 0% 0% 20%;
+}
+
+#pro_icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+.icon{
+  background: #272e31;
+  border-radius: 50%;
+  
+}
+#pro_icons i {
+  font-size: 2rem;
+  margin-right: 10px;
+  margin-top: 50px;
+}
+.side {
+  width: 25%;
+  background: rgba(160, 125, 111, 0.95);
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  border-left: solid 2px rgb(39, 41, 36);
+  padding-left: 3%;
+  color: white;
+}
+
+.epoch {
+  padding: 3%;
+  margin: 0px;
+  border-left: solid 2px rgb(39, 41, 36);
+  color: white;
+  font-family: sans-serif;
+  padding-top: 0;
+}
+
+i {
+  display: block;
+  color: rgb(206, 202, 197);
+  margin-top: 3px;
+  margin-left: -4px;
+  margin-bottom: -2px;
+}
+
+.container {
+  margin-left: 50px;
+  /* margin-top: 100px; */
+  padding: 7%;
+  /* padding: 1% 0% 0% 20%; */
+}
+
+#skills button {
+  background: #272e31;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #b08968;
+}
+
+#skills a {
+  text-decoration: none;
+  color: #b08968;
+}
+
+#skills button:hover {
+  transform: scale(0.9);
+}
+
+#skills h1 {
+  text-align: center;
+  padding-top: 1em;
+  color: black;
+  font-size: 4em;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+#pro_icons li {
+  list-style-type: none;
+}
+
+#skills button {
+  margin-left: 27%;
+}
+
+#skills h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.items i {
+  font-size: 0.7rem;
+  flex-direction: row;
+  display: flex;
+}
+.myinfo {
+  display: block;
+  margin-left: 25%;
+  justify-content: space-between;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.service li:last-of-type {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 730px) {
+  #skills h1 {
+    font-size: 250%;
+  }
+  #pro_icons i {
+    font-size: 3rem;
+    margin-right: 10px;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 1000px) {
+  .myinfo {
+    margin-left: 10%;
+  }
+
+  #skills {
+    padding: 0% 0% 0% 0%;
+  }
+}

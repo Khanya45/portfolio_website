@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/cce18f0ce0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/styling/portfolio.css" />
+    <link rel="stylesheet" href="/styling/landing.css">
+    <link rel="stylesheet" href="/styling/navbar.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-links">
+        <li class="navbar-link">
+          <a href="/html/index.html" class="navbar-anchor">HOME</a>
+        </li>
+        <li class="navbar-link">
+          <a href="/html/aboutme.html" class="navbar-anchor">ABOUT ME</a>
+        </li>
+        <li class="navbar-link">
+          <a href="/html/portfolio.html" class="navbar-anchor">PORTFOLIO</a>
+        </li>
+        <li class="navbar-link">
+          <a href="/html/services.html" class="navbar-anchor"
+            >SKILLS & EXPERIENCE</a
+          >
+        </li>
+        <li class="navbar-link">
+          <a href="/html/testimonials.html" class="navbar-anchor"
+            >TESTIMONIALS</a
+          >
+        </li>
+        <li class="navbar-link">
+          <a href="/html/contact.html" class="navbar-anchor">CONTACT ME</a>
+        </li>
+      </ul>
+      <button class="navbar-button" onclick="toggleNavbar()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+    <!---------------------SIDE BAR----------------->
+    <div class="main">
+      <div id="first" style="height: 0">
+        <div id="side_bar">
+          <img src="/images/Khanya Gope.JPG" alt="My Profile Photo" />
+          <h1 id="side_heading">Khanya Gope</h1>
+          <h2 id="side_heading">front-end developer</h2>
+          <div class="links">
+            <a href="/html/index.html">Home</a>
+            <a href="/html/aboutme.html">About Me</a>
+            <a href="/html/portfolio.html">Portfolio</a>
+            <a href="/html/services.html">My Skills & Experiences</a>
+            <a href="/html/testimonials.html">Testimonials</a>
+            <a href="/html/contact.html">Contact Me</a>
+          </div>
+          <h4>Get in touch</h4>
+          <div id="social-bar">
+            <a
+              href="https://www.linkedin.com/mwlite/in/khanya-gope-9255b2191"
+              title="LinkedIn:KhanyaGope"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/Khanya45" title="Github:Khanya45"
+              ><i class="fab fa-github-square"></i
+            ></a>
+            <a href="https://codepen.io/your-work" title="CodePen:KhanyaGope"
+              ><i class="fab fa-codepen"></i
+            ></a>
+          </div>
+          <footer>
+            <p>&copy;Copyright 2021.Made by Khanya Gope.</p>
+          </footer>
+        </div>
+      </div> 
+    <!---------------------PORTFOLIO SECTION----------------->  
+    <h1 class="heading">Portfolio</h1>
+    <div class="button-container">
+      <button onclick="filterCards('All')">All</button>
+      <button onclick="filterCards('HTML/CSS')">HTML/CSS</button>
+      <button onclick="filterCards('Python')">Python</button>
+      <button onclick="filterCards('JavaScript')">JavaScript</button>
+    </div>
+    <div class="container">
+
+      <!-- <div class="card">
+        <img src="/images/convertor.png" alt="" />
+        <div class="overlay">
+          <h1>Glasssmorphism</h1>
+          <p>
+            I have maintained, developed and launched multiple projects from
+            scratch, carrying the development of its' back-end and front-end
+            codebases.
+          </p>
+          <a href="https://replit.com/join/qphjpcja-khanya45" target="_blank"
+            ><button>LIVE</button></a
+          >
+          <a href="https://github.com/Khanya45/python-temp-convertor" target="_blank"
+            ><button>CODE</button></a
+          >
+        </div>
+      </div>
+      <div class="card">
+        <img src="/images/contactform.png" alt="" />
+        <div class="overlay">
+          <h1>Glasssmorphism</h1>
+          <p>
+            I have maintained, developed and launched multiple projects from
+            scratch, carrying the development of its' back-end and front-end
+            codebases.
+          </p>
+          <a href="https://dazzling-thompson-3f7fef.netlify.app" target="_blank"
+            ><button>LIVE</button></a
+          >
+          <a href="https://github.com/Khanya45/contact-form" target="_blank"
+            ><button>CODE</button></a
+          >
+        </div>
+      </div>
+      <div class="card">
+        <img src="/images/login.png" alt="" />
+        <div class="overlay">
+          <h1>Glasssmorphism</h1>
+          <p>
+            I have maintained, developed and launched multiple projects from
+            scratch, carrying the development of its' back-end and front-end
+            codebases.
+          </p>
+          <a href="https://codepen.io/KhanyaG/details/KKwwBwL" target="_blank"
+            ><button>LIVE</button></a
+          >
+          <a href="https://codepen.io/KhanyaG/pen/KKwwBwL" target="_blank"
+            ><button>CODE</button></a
+          >
+        </div>
+      </div>
+      <div class="card">
+        <img src="/images/slides.png" alt="" />
+        <div class="overlay">
+          <h1>Glasssmorphism</h1>
+          <p>
+            I have maintained, developed and launched multiple projects from
+            scratch, carrying the development of its' back-end and front-end
+            codebases.
+          </p>
+          <a href="https://replit.com/join/kofcaemt-khanya45" target="_blank"
+            ><button>LIVE</button></a
+          >
+          <a href="https://github.com/Khanya45/python-sum" target="_blank"
+            ><button>CODE</button></a
+          >
+        </div>
+      </div>
+      <div class="card">
+        <img src="/images/sumofnums.png" alt="" />
+        <div class="overlay">
+          <h1>Glasssmorphism</h1>
+          <p>
+            I have maintained, developed and launched multiple projects from
+            scratch, carrying the development of its' back-end and front-end
+            codebases.
+          </p>
+          <a href="https://replit.com/join/kofcaemt-khanya45" target="_blank"
+            ><button>LIVE</button></a
+          >
+          <a href="https://github.com/Khanya45/python-sum" target="_blank"
+            ><button>CODE</button></a
+          >
+        </div>
+      </div>
+      <div class="card">
+        <img src="/images/timeline.png" alt="" />
+        <div class="overlay">
+          <h1>Glasssmorphism</h1>
+          <p>
+            I have maintained, developed and launched multiple projects from
+            scratch, carrying the development of its' back-end and front-end
+            codebases.
+          </p>
+          <a href="https://quirky-easley-d9dfc6.netlify.app/" target="_blank"
+            ><button>LIVE</button></a
+          >
+          <a href="https://github.com/Khanya45/timeline" target="_blank"
+            ><button>CODE</button></a
+          >
+        </div>
+      </div>
+      <div class="card">
+        <img src="/images/graphs.png" alt="" />
+        <div class="overlay">
+          <h1>Glasssmorphism</h1>
+          <p>
+            I have maintained, developed and launched multiple projects from
+            scratch, carrying the development of its' back-end and front-end
+            codebases.
+          </p>
+          <a href="https://replit.com/join/kofcaemt-khanya45" target="_blank"
+            ><button>LIVE</button></a
+          >
+          <a href="https://github.com/Khanya45/python-sum" target="_blank"
+            ><button>CODE</button></a
+          >
+        </div>
+      </div> -->
+    
+    </div>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="/navbar.js"></script>
+    <script src="/html/portfolio.js"></script>
+  </body>
+</html>

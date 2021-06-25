@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/cce18f0ce0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="/styling/landing.css" rel="stylesheet" />
+    <!-- <link href="/styling/portfolio.css" rel="stylesheet" />
+    <link href="/styling/contactform.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/styling/services.css" /> -->
+    <link rel="stylesheet" href="/styling/testimonials.css" />
+    <link rel="stylesheet" href="/styling/navbar.css" />
+    <!-- <link rel="stylesheet" href="/styling/aboutme.css" /> -->
+  </head>
+  <body>
+    <!---------------------Nav Bar----------------->
+    <nav class="navbar">
+      <ul class="navbar-links">
+        <li class="navbar-link">
+          <a href="/html/index.html" class="navbar-anchor">HOME</a>
+        </li>
+        <li class="navbar-link">
+          <a href="/html/aboutme.html" class="navbar-anchor">ABOUT ME</a>
+        </li>
+        <li class="navbar-link">
+          <a href="/html/portfolio.html" class="navbar-anchor">PORTFOLIO</a>
+        </li>
+        <li class="navbar-link">
+          <a href="/html/services.html" class="navbar-anchor"
+            >SKILLS & EXPERIENCE</a
+          >
+        </li>
+        <li class="navbar-link">
+          <a href="/html/testimonials.html" class="navbar-anchor"
+            >TESTIMONIALS</a
+          >
+        </li>
+        <li class="navbar-link">
+          <a href="/html/contact.html" class="navbar-anchor">CONTACT ME</a>
+        </li>
+      </ul>
+      <button class="navbar-button" onclick="toggleNavbar()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+    <!---------------------LANDING PAGE----------------->
+    <div class="main">
+      <div id="first" style="height: 0">
+        <div id="side_bar">
+          <img src="/images/Khanya Gope.JPG" alt="My Profile Photo" />
+          <h1 id="side_heading">Khanya Gope</h1>
+          <h2 id="side_heading">front-end developer</h2>
+          <div class="links">
+            <a href="/html/index.html">Home</a>
+            <a href="/html/aboutme.html">About Me</a>
+            <a href="/html/portfolio.html">Portfolio</a>
+            <a href="/html/services.html">My Skills & Experiences</a>
+            <a href="/html/testimonials.html">Testimonials</a>
+            <a href="/html/contact.html">Contact Me</a>
+          </div>
+          <h4>Get in touch</h4>
+          <div id="social-bar">
+            <a
+              href="https://www.linkedin.com/mwlite/in/khanya-gope-9255b2191"
+              title="LinkedIn:KhanyaGope"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/Khanya45" title="Github:Khanya45"
+              ><i class="fab fa-github-square"></i
+            ></a>
+            <a href="https://codepen.io/your-work" title="CodePen:KhanyaGope"
+              ><i class="fab fa-codepen"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!---------------------TESTIMONIAL SECTION----------------->
+      <section>
+        <h1>TESTIMONIALS</h1>
+        <div class="container">
+          <div class="card">
+            <div class="imgbx">
+              <img src="/images/Naeemah.jpg" />
+            </div>
+            <div class="content">
+              <h2>Naeemah Davis</h2>
+              <h3>-Peer-</h3>
+              <p>
+                Khanya is a sweet and charismatic individual. She is talented
+                intellectually and poetically. An asset not only to her peers
+                but I believe at any company as well.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imgbx">
+              <img src="/images/thapelo-tsotetsi2.jpg" />
+            </div>
+            <div class="content">
+              <h2>Thapelo Tsotetsi</h2>
+              <h3>-LECTURER-</h3>
+              <p>
+                Khanya is one of the best students we have in the academy. Her
+                ability too learn new technologies is incredible. She posses
+                great problem solving skills. She has great personality and
+                works well within a team. I believe she can be a great person to
+                have in a team as a Junior Full-stack developer.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imgbx">
+              <img src="/images/Godwin.png" />
+            </div>
+            <div class="content">
+              <h2>Godwin Dzvapatsva</h2>
+              <h3>-Head of Curriculum and Learning-</h3>
+              <p>
+                Khanya regularly produces creative and original projects
+                well-attuned to the requirements of the briefs. She presents her
+                ideas without being aggressively over-confident. I recommend
+                her.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="/navbar.js"></script>
+  </body>
+</html>
