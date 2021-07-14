@@ -17,10 +17,12 @@ body {
   border: none;
   border-bottom: 1px solid rgb(29, 25, 25);
   background: rgb(206, 199, 170);
+  outline: none;
 }
 
 #textbox textarea {
   border: none;
+  outline: none;
   /* border-radius: 10px; */
   padding: 10px;
   margin: 10px;
@@ -99,8 +101,7 @@ body {
   display: inline-table;
   text-align: left;
   /* border-radius: 5px; */
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-radius: 5px;
 }
 .contact_details i {
   font-size: 1.5em;
@@ -123,10 +124,12 @@ body {
 form {
   background: rgb(206, 199, 170);
   padding: 3%;
-  border-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
   width: 32em;
   height: 450px;
   align-items: center;
+  justify-content: center;
   display: grid;
 }
 

@@ -69,6 +69,26 @@ let projects = [
     githubURL: "https://github.com/Khanya45/python-sum",
     liveProjectURL: "https://replit.com/join/kofcaemt-khanya45",
   },
+  {
+    imgURL: "/images/calculator.png",
+    imgALT: "My Project 1",
+    title: "Calculator",
+    techStack: "JavaScript",
+    description:
+      "I have maintained, developed and launched multiple projects from scratch, carrying the development of it's back-end and front-end codebases.",
+    githubURL: "https://github.com/Khanya45/calculator",
+    liveProjectURL: "https://replit.com/join/kofcaemt-khanya45",
+  },
+  {
+    imgURL: "/images/pokemon.png",
+    imgALT: "My Project 1",
+    title: "Pokemon UI",
+    techStack: "JavaScript",
+    description:
+      "I have maintained, developed and launched multiple projects from scratch, carrying the development of it's back-end and front-end codebases.",
+    githubURL: "https://github.com/Khanya45/pokemon",
+    liveProjectURL: "https://pokemon-by-khanya.netlify.app/",
+  },
 ];
 
 function createCard(card) {

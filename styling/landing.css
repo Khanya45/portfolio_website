@@ -8,12 +8,12 @@ body {
   background-size: cover;
   /* height: 100vh; */
 }
-
+/* 
 #first {
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
-}
+} */
 
 .navbar button {
   background: rgba(206, 206, 206, 0.6);
@@ -76,23 +76,19 @@ body {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
   margin-bottom: 15px;
 } */
-footer {
+.footer {
   color: rgba(0, 0, 0, 0.7);
-  text-shadow: 0 1px rgba(255, 255, 255, 0.1);
-  /* margin-top: 10px; */
-  display: flex;
-  align-items: flex-end;
+  text-shadow: 0 1px #ffffff1a;
+  position: fixed;
+  /* left: 0; */
+  bottom: 0;
+  /* width: 100%; */
+  margin-bottom: 20px;
+  /* text-align: center; */
+  width: 20%;
+  padding: 3%;
 }
-/* #About_me p {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-  background: rgba(59, 48, 48, 0.7);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  padding: 10px;
-} */
+
 .main {
   /* background: #b08968; */
   width: 100%;
@@ -193,28 +189,8 @@ h4 {
 }
 
 #social-bar i:hover {
-  /* transition: 0.3s;
-  transform: scale(0.9); */
   color: #14213d;
-  /* animation: icons 2s;
-  animation-delay: icons 2s; */
 }
-/* 
-@keyframes icons {
-  0% {
-    font-size: 2rem;
-  }
-
-  50% {
-    font-size: 1.5rem;
-  }
-  75% {
-    font-size: 1.8;
-  }
-  100% {
-    font-size: 2rem;
-  }
-} */
 
 @media screen and (max-width: 1000px) {
   #side_bar {
